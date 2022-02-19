@@ -16,10 +16,10 @@
     port: ssh
     proto: tcp
 
-- name: Allow port WireGuard(51800/udp)
+- name: Allow port WireGuard(51820/udp)
   community.general.ufw:
     rule: allow
-    port: 51800
+    port: 51820
     proto: udp
 
 - name: Allow all access from RFC1918 networks to this host
